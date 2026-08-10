@@ -17,7 +17,7 @@ baseline: spec
 				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
 			spec
 				baseline: 'Seamless'
-				with: [ spec repository: 'github://pharo-ide/Seamless' ].
+				with: [ spec repository: 'github://oliveiraallex/seamless:dev13-1' ].
 			spec
 				project: 'SeamlessForServer'
 				copyFrom: 'Seamless'
@@ -29,7 +29,7 @@ baseline: spec
 			spec
 				baseline: 'StateSpecs'
 				with: [ spec
-						repository: 'github://dionisiydk/StateSpecs:v5.0.2';
+						repository: 'github://dionisiydk/StateSpecs:v5.0.4';
 						loads: #('StateSpecs-Specs' 'StateSpecs-DSL-ClassWords') ].
 			spec
 				for: #'pharo7.x'

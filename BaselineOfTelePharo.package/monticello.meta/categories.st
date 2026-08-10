@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfTelePharo!
+self packageOrganizer ensurePackage: #BaselineOfTelePharo withTags: #()!
