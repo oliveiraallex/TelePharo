@@ -5,25 +5,25 @@ baseline: spec
 		for: #common
 		do: [ spec
  			   package: 'Calypso-NavigationModel-Tests'
-  				with: [ spec repository: 'github://pharo-ide/Calypso:dev13-1' ].
+  				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
 				package: 'Calypso-SystemTools-Debugger'
-				with: [ spec repository: 'github://pharo-ide/Calypso:dev13-1' ].
+				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
 				package: 'Calypso-ProcessQueries'
-				with: [ spec repository: 'github://pharo-ide/Calypso:dev13-1' ].
+				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
    			   package: 'Calypso-ProcessQueries-Tests'
   			   with: [ spec
-    	      repository: 'github://pharo-ide/Calypso:dev13-1';
+    	      repository: 'github://oliveiraallex/Calypso:dev13-1';
       		   requires: #('Calypso-NavigationModel-Tests') ].
 			spec
 				package: 'Calypso-SystemTools-ProcessBrowser'
-				with: [ spec repository: 'github://pharo-ide/Calypso:dev13-1';
+				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1';
         		requires: #('Calypso-Browser') ].
 			spec
  			   package: 'Calypso-Browser'
-   				 with: [ spec repository: 'github://pharo-ide/Calypso:dev13-1' ].
+   				 with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
 				baseline: 'Seamless'
 				with: [ spec repository: 'github://oliveiraallex/seamless:dev13-1' ].
@@ -45,7 +45,7 @@ baseline: spec
 				do: [ "Dependencies for Pharo7, Calypso"
 					spec
 						baseline: 'Calypso'
-						with: [ spec repository: 'github://pharo-ide/Calypso:dev13-1/src' ].
+						with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1/src' ].
 					spec
 						project: 'CalypsoMinimalEnvironment'
 						copyFrom: 'Calypso'
