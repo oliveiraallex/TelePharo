@@ -3,10 +3,7 @@ baseline: spec
 	<baseline>
 	spec
 		for: #common
-		do: [ spec
- 			   package: 'Calypso-NavigationModel-Tests'
-  				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
-			spec
+		do: [ 	spec
 				package: 'Calypso-SystemTools-Debugger'
 				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
@@ -15,8 +12,7 @@ baseline: spec
 			spec
    			   package: 'Calypso-ProcessQueries-Tests'
   			   with: [ spec
-    	      repository: 'github://oliveiraallex/Calypso:dev13-1';
-      		   requires: #('Calypso-NavigationModel-Tests') ].
+    	      repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
 				package: 'Calypso-SystemTools-ProcessBrowser'
 				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1';
