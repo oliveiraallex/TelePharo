@@ -5,9 +5,7 @@ baseline: spec
 		for: #common
 		do: [ spec
  			   package: 'Calypso-NavigationModel-Tests'
-  				with: [ spec
-      		   repository: 'github://pharo-ide/Calypso:v0.16.5/src';
-      		   requires: #('Calypso-NavigationModel') ].
+  				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
 			spec
 				package: 'Calypso-SystemTools-Debugger'
 				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
