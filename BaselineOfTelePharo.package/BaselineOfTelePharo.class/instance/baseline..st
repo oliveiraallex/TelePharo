@@ -4,14 +4,21 @@ baseline: spec
 	spec
 		for: #common
 		do: [ spec
+ 			   package: 'Calypso-NavigationModel-Tests'
+  				with: [ spec
+      		   repository: 'github://pharo-ide/Calypso:v0.16.5/src';
+      		   requires: #('Calypso-NavigationModel') ].
+			spec
 				package: 'Calypso-SystemTools-Debugger'
 				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
 			spec
 				package: 'Calypso-ProcessQueries'
 				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
 			spec
-				package: 'Calypso-ProcessQueries-Tests'
-				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
+   			   package: 'Calypso-ProcessQueries-Tests'
+  			   with: [ spec
+    	      repository: 'github://pharo-ide/Calypso:v0.16.5/src';
+      		   requires: #('Calypso-NavigationModel-Tests') ].
 			spec
 				package: 'Calypso-SystemTools-ProcessBrowser'
 				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
