@@ -19,7 +19,11 @@ baseline: spec
       		   requires: #('Calypso-NavigationModel-Tests') ].
 			spec
 				package: 'Calypso-SystemTools-ProcessBrowser'
-				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
+				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src';
+        		requires: #('Calypso-Browser') ].
+			spec
+ 			   package: 'Calypso-Browser'
+   				 with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
 			spec
 				baseline: 'Seamless'
 				with: [ spec repository: 'github://oliveiraallex/seamless:dev13-1' ].
