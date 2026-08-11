@@ -25,6 +25,9 @@ baseline: spec
  			   package: 'Calypso-Browser'
    				 with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
+			    package: 'Calypso-SystemQueries'
+			    with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
+			spec
 				baseline: 'Seamless'
 				with: [ spec repository: 'github://oliveiraallex/seamless:dev13-1' ].
 			spec
@@ -40,33 +43,7 @@ baseline: spec
 				with: [ spec
 						repository: 'github://oliveiraallex/StateSpecs:dev13';
 						loads: #('StateSpecs-Specs' 'StateSpecs-DSL-ClassWords') ].
-			spec
-				for: #'pharo7.x'
-				do: [ "Dependencies for Pharo7, Calypso"
-					spec
-						baseline: 'Calypso'
-						with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1/src' ].
-					spec
-						project: 'CalypsoMinimalEnvironment'
-						copyFrom: 'Calypso'
-						with: [ spec loads: #('MinimalEnvironment' 'ProcessEnvironment') ].
-					spec
-						project: 'CalypsoFullEnvironment'
-						copyFrom: 'Calypso'
-						with: [ spec loads: #('FullEnvironment' 'ProcessEnvironment') ].
-					spec
-						project: 'CalypsoBrowser'
-						copyFrom: 'Calypso'
-						with: [ spec loads: 'default' ].
-					spec
-						group: 'Server'
-						with: #('MinimalServer' 'CalypsoFullEnvironment').
-					spec
-						package: 'TelePharo-Browser-Server'
-						with: [ spec requires: #('CalypsoMinimalEnvironment' 'TelePharo-Core') ].
-					spec
-						package: 'TelePharo-Browser-Client'
-						with: [ spec requires: #('TelePharo-Browser-Server' 'CalypsoBrowser') ] ].
+			
 			spec
 				package: 'TelePharo-Core'
 				with: [ spec requires: #('StateSpecs') ].
@@ -75,7 +52,7 @@ baseline: spec
 				with: [ spec requires: #('TelePharo-Core') ].
 			spec
 				package: 'TelePharo-Browser-Server'
-				with: [ spec requires: #('TelePharo-Core') ].
+				with: [ spec requires: #('TelePharo-Core' 'Calypso-SystemQueries') ].
 			spec
 				package: 'TelePharo-Browser-Client'
 				with: [ spec requires: #('TelePharo-Browser-Server') ].
