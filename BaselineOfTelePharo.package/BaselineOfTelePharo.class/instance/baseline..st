@@ -15,11 +15,7 @@ baseline: spec
     	      repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
 				package: 'Calypso-SystemTools-ProcessBrowser'
-				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1';
-        		requires: #('Calypso-Browser') ].
-			spec
- 			   package: 'Calypso-Browser'
-   				 with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
+				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
 			    package: 'Calypso-SystemQueries'
 			    with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
