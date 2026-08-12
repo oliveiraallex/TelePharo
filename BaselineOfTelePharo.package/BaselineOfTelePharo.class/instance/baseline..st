@@ -17,9 +17,6 @@ baseline: spec
 				package: 'Calypso-SystemTools-ProcessBrowser'
 				with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
 			spec
-			    package: 'Calypso-SystemQueries'
-			    with: [ spec repository: 'github://oliveiraallex/Calypso:dev13-1' ].
-			spec
 				baseline: 'Seamless'
 				with: [ spec repository: 'github://oliveiraallex/seamless:dev13-1' ].
 			spec
@@ -44,7 +41,7 @@ baseline: spec
 				with: [ spec requires: #('TelePharo-Core') ].
 			spec
 				package: 'TelePharo-Browser-Server'
-				with: [ spec requires: #('TelePharo-Core' 'Calypso-SystemQueries') ].
+				with: [ spec requires: #('TelePharo-Core') ].
 			spec
 				package: 'TelePharo-Browser-Client'
 				with: [ spec requires: #('TelePharo-Browser-Server') ].
