@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'TelePharo-Browser-Server'!
+self packageOrganizer ensurePackage: #'TelePharo-Browser-Server' withTags: #()!
