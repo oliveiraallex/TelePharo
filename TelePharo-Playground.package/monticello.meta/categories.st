@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'TelePharo-Playground'!
+self packageOrganizer ensurePackage: #'TelePharo-Playground' withTags: #()!
